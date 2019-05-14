@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="CY2o7l2UYY9NypAVMIRmAE" LanguageVersion="2019.1.0-0332-g9daa03035b" Version="0.128">
+<Document xmlns:p="property" Id="CY2o7l2UYY9NypAVMIRmAE" LanguageVersion="2019.1.0-0344-gd5eabf23a7" Version="0.128">
   <NugetDependency Id="HzRCJJwUSOgNW9AXnSbhkA" Location="VL.CoreLib" Version="2019.1.0-332" />
   <Patch Id="QZDHOeK4pvoPUQN3J2eweC">
     <Canvas Id="QRX48Kus6psQEVsIwOjduY" DefaultCategory="UIElements.Slider" CanvasType="FullCategory">
@@ -370,6 +370,7 @@
                 </Slot>
                 <Patch Id="Trneyt6laWsP94kk41wGdy" Name="ProcessNotification">
                   <Pin Id="EhsExjYIJ5wOw07aUN17s5" Name="KeyboardState" Kind="InputPin" />
+                  <Pin Id="Qt5LkJsVfmhQcfUyD3WPWL" Name="Result" Kind="OutputPin" />
                   <Pin Id="QIb1dm4K36uLXcxe07zPIV" Name="MouseState" Kind="InputPin" />
                   <Pin Id="Agmb2xSkg5gN1PXsWOQ7pi" Name="Notification" Kind="InputPin" />
                 </Patch>
@@ -723,6 +724,12 @@
                     <Pin Id="PxAnp6rX0MYLCmzRsFj0R9" Name="Result" Kind="OutputPin" />
                     <Pin Id="QMOMmBYrcFgL6GEvgrcEmV" Name="Unchanged" Kind="OutputPin" />
                   </Node>
+                  <ControlPoint Id="RWEUnP6rMo6PKkOh53RlD7" Bounds="337,1104" />
+                  <Pad Id="FyHYL7PCJo3LO4qgS5k7aV" Comment="Handled" Bounds="336,1035,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pad>
                 </Canvas>
                 <Patch Id="IutrZnfesC5OMGgYggw645" Name="Create">
                   <Pin Id="VilrQ17EXvXL2NnBaQA2uD" Name="Properties" Kind="InputPin" />
@@ -757,6 +764,7 @@
                 <Link Id="SpUwIDI5CYaMBjt0spiPdL" Ids="QAEz6GUbY2uM6gn5otNo5y,BZiIjAeMsBSPwu6D1qzJYr" IsHidden="true" />
                 <Patch Id="L9SlZd115CeL3fw3zqIF0x" Name="ProcessNotification">
                   <Pin Id="TxQoXKGSS8vMS7NiuP2KEA" Name="Notification" Kind="InputPin" />
+                  <Pin Id="D5TyTQFuW7MPUqeEGT9h2Q" Name="Result" Kind="OutputPin" />
                   <Pin Id="HKLsIxgB2bQLAgiysCj734" Name="MouseState" Kind="InputPin" />
                   <Pin Id="AivFRZA4KJPOXKRk0A3L2X" Name="KeyboardState" Kind="InputPin" />
                 </Patch>
@@ -821,6 +829,8 @@
                 <Link Id="JlGu0FZ3PoeOc0Y2B1omm2" Ids="D8q3PYkmpBVPN0F4vpdE8S,TdUG6n46vNXMpitlxfiL7a" />
                 <Link Id="QqGvvkkdZ41LmNNNPbLcfG" Ids="RhEZllbQS8qQT1qdtAFAO1,GHgXPMz7TUIPEx07exkcdw" />
                 <Link Id="K2wM9meYmhSLIbpIMKi5Lw" Ids="PxAnp6rX0MYLCmzRsFj0R9,FTLwnbmPRTpO7sF5bOm3UQ" />
+                <Link Id="L45Z8OvwDpbM9yXqYTHowX" Ids="RWEUnP6rMo6PKkOh53RlD7,D5TyTQFuW7MPUqeEGT9h2Q" IsHidden="true" />
+                <Link Id="NSOFijAT6ebNBWVRIUxzn2" Ids="FyHYL7PCJo3LO4qgS5k7aV,RWEUnP6rMo6PKkOh53RlD7" />
               </Patch>
             </Node>
             <!--
@@ -1275,6 +1285,7 @@
                 <Link Id="ORCpmnYMZnqQV0r8PNinWX" Ids="QhI28l5xlFPPzbQUCNKRZj,VFRplyu7S3lPN0DVRq94xs" />
                 <Link Id="MWnpLrHUReXOUOmue3UNWN" Ids="EkFaVKot1N4Nali3LwBQ0j,LzdAV1jwzNIQdjg5lKg3eW" IsFeedback="true" />
                 <Patch Id="JUUJjgaOdJuM9W7mUjXuKw" Name="ProcessNotification">
+                  <Pin Id="CUq1iSk2g7tQB5OvtUYJSY" Name="Result" Kind="OutputPin" />
                   <Pin Id="GGsZi8BOlGjPdrqaKjncLF" Name="Notification" Kind="InputPin" />
                   <Pin Id="QCkPC1OxOJvLJ0PyjVTdk7" Name="MouseState" Kind="InputPin" />
                   <Pin Id="UW80qFQSFo6PEDgqmUsVjd" Name="KeyboardState" Kind="InputPin" />
@@ -1463,6 +1474,7 @@
                 <Link Id="OqSUjU3LZzrONQtcbYK95h" Ids="E6PXONcyNfHNq7QfJivEzS,E0nHuL5KrTiQHlLKuiRFG6" />
                 <Link Id="ME8PkVcVEmJORFk18VcUVG" Ids="Tvj5qITuFKGOMGU2mpsgOo,E6PXONcyNfHNq7QfJivEzS" IsHidden="true" />
                 <Patch Id="KDhF0NOwNPwMv0zYsJJE5y" Name="ProcessNotification" ParticipatingElements="LXTCRTL1kolOVUMf3ChEe7">
+                  <Pin Id="BZY9KBKn8MiO2ZKyCBcjWh" Name="Result" Kind="OutputPin" />
                   <Pin Id="SCDCX95nypaPlyVzI6aqoi" MergeId="145629" Name="Notification" Kind="InputPin" />
                   <Pin Id="EOXyyes1kYSLV6rSQ8sJIj" MergeId="145630" Name="MouseState" Kind="InputPin" />
                   <Pin Id="F5HQkxQ5dPULhYF5rGDIoL" MergeId="145631" Name="KeyboardState" Kind="InputPin" />
@@ -3439,6 +3451,7 @@
                 <Link Id="JwDvrrNGpAoMvXlEOLErDw" Ids="TeQxZ9IdzTxQBTcwI4uLF7,KPcFwuiTqJkP8phvRDu3qX" />
                 <Link Id="EGX2y7xYwVBNAftPpMdaTo" Ids="KgN4ZfequjgMaIKxuEp8vt,TeQxZ9IdzTxQBTcwI4uLF7" IsHidden="true" />
                 <Patch Id="RPf9L7ozuoUQBxsNsCu0Vy" Name="ProcessNotification">
+                  <Pin Id="MlUn9NNKYVrOhuH6BHOjrp" Name="Result" Kind="OutputPin" />
                   <Pin Id="N0HNhKGfT19Lhko4czmTUf" Name="Notification" Kind="InputPin" />
                   <Pin Id="R96WYPq0RxCO2bsb5AuIUM" Name="MouseState" Kind="InputPin" />
                   <Pin Id="Ci4n2ktb2xVPWASEnY5th0" Name="KeyboardState" Kind="InputPin" />
@@ -3804,6 +3817,7 @@
                 </Slot>
                 <Patch Id="CzMhJmQYMYNQbdBqIiIS5Z" Name="ProcessNotification">
                   <Pin Id="BBxhRa1OlJhOpJrkwnFaI4" Name="KeyboardState" Kind="InputPin" />
+                  <Pin Id="LrZ8on7082PLlCiartArCM" Name="Result" Kind="OutputPin" />
                   <Pin Id="JC5L1Ruo8lpOi1fyTTTi1b" Name="MouseState" Kind="InputPin" />
                   <Pin Id="VoodW044teMOrzmbBJTPp9" Name="Notification" Kind="InputPin" />
                 </Patch>
@@ -4310,6 +4324,7 @@
                 <Link Id="KaeLRJEvzdUNuvGfEhjwDJ" Ids="GnTU9tCA8z2QTmtyo0cak8,HxvxO62R9sRMboaZMAKXgb" />
                 <Link Id="VmFj9k9v8PkMUqb31tPh8Q" Ids="FvwiLtW1rDMLWQqKPVaFmi,MPvqAl2fy4rOvMc8xJ3O5n" IsFeedback="true" />
                 <Patch Id="QCJU08ojdcjM4rt7ZS8tPX" Name="ProcessNotification">
+                  <Pin Id="MdUD9Jy9bY7PJNi4DNfrq1" Name="Result" Kind="OutputPin" />
                   <Pin Id="PqCE0bJmMQ3QWB0oRpW0rG" Name="Notification" Kind="InputPin" />
                   <Pin Id="H2tgaa8J20aPvsHJgBDads" Name="MouseState" Kind="InputPin" />
                   <Pin Id="Qd81CS3IgPwQXtjzxBQtLV" Name="KeyboardState" Kind="InputPin" />
@@ -4498,6 +4513,7 @@
                 <Link Id="VJNoMBME1cqLb35OFub6MG" Ids="JeLRqBrs3ZoMhIkGtb9X8q,EYFWV6BydaDPmA5N3VLhVY" />
                 <Link Id="IJe3CgHYaNDL3PLz1LZExd" Ids="MhraYhX6HLFQIbTlU7zJmP,JeLRqBrs3ZoMhIkGtb9X8q" IsHidden="true" />
                 <Patch Id="Qn4HWwJSqCeNeY13odUkH1" Name="ProcessNotification" ParticipatingElements="R6QKbHHyg6CPk9Mgmw3PY3">
+                  <Pin Id="EMt44uqrqEfQHKAhn6c5bx" Name="Result" Kind="OutputPin" />
                   <Pin Id="Cu3r4woP9TrP9f9lmAsOzK" MergeId="145629" Name="Notification" Kind="InputPin" />
                   <Pin Id="VlFucKByU0lPYu9qI7Nfs0" MergeId="145630" Name="MouseState" Kind="InputPin" />
                   <Pin Id="RM4zq5SJxoWLtHm1wp5GcM" MergeId="145631" Name="KeyboardState" Kind="InputPin" />
@@ -4571,11 +4587,6 @@
         <Canvas Id="BE0SQWxF9hmOeJkxMdbtqg" CanvasType="Group" />
         <Patch Id="Ph7OdQDfDDJMxv9S3dg80y" Name="Create" />
         <Patch Id="LIf0GuzbAVbOMrYdAl7XZ9" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="FgnHrdgNke8PxalyKRo4Yo">
           <Fragment Id="QRdWaPyRtBfNt7StXIcvsv" Patch="Ph7OdQDfDDJMxv9S3dg80y" Enabled="true" />
           <Fragment Id="HEBorW1crdpO38HcLznzdX" Patch="LIf0GuzbAVbOMrYdAl7XZ9" Enabled="true" />
